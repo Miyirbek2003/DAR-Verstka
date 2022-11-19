@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-width: 340px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+span,
+a,
+button,
+input,
+i,
+img {
+    display: inline-block;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 60px;
+}
+
+/* === Hero === */
+.hero {
+    position: relative;
+    height: 90vh;
+    background-color: #CBECFF;
+    padding: 20px 0;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-inner h1 {
+    font-size: 60px;
+    color: #29374E;
+}
+
+.hero-inner h1 span {
+    height: auto;
+    background-color: white;
+    padding: 0 10px;
+    border-radius: 15px;
+    color: #0962E8;
+}
+
+.hero-inner p {
+    font-size: 22px;
+    color: #29374E;
+    padding: 15px 0;
+}
+
+.btn {
+    padding: 15px;
+    background-color: #0962E8;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0657d1;
+}
+
+.bottom-card {
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    bottom: -30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.bottom-card .card {
+    justify-content: space-between;
+    background-color: white;
+    gap: 6px;
+    display: flex;
+    height: 100px;
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 20px;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card p {
+    color: #29374E;
+    font-weight: 600;
+    line-height: 140%;
+    padding-top: 5px;
+}
+
+.card img {
+    width: 40px;
+}
+
+.keys {
+    padding: 100px 0;
+}
+
+.keys-inner h1 {
+    line-height: 130%;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.keys-inner h1 span {
+    color: #0962E8;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 25px;
+}
+
+.imgg {
+    display: flex;
+    flex-direction: row;
+    background-color: #E9F6FF;
+    padding: 37px 20px;
+}
+
+.imgg img {
+    width: 200px;
+}
+
+.imgg .text {
+    width: 300px;
+}
+
+.text h3 {
+    line-height: 28px;
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.text p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.order {
+    display: flex;
+    gap: 100px;
+    padding-top: 50px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 33px;
+    padding: 0;
+    text-align: left;
+}
+
+.left p {
+    font-size: 14px;
+    color: #1E2837;
+    line-height: 20px;
+    padding: 15px 0;
+}
+
+.left .btn {
+    text-align: center;
+    width: 200px;
+}
+
+.right {
+    width: 50%;
+    display: grid;
+    gap: 19px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-item {
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card-item p {
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+/* === @media === */
+
+@media only screen and (max-width:1000px) {
+    .card p {
+        font-size: 12px;
+    }
+
+    .keys-inner h1 {
+        font-size: 35px;
+    }
+
+    .text h3 {
+        font-size: 20px;
+    }
+
+    .left h1 {
+        font-size: 25px !important;
+    }
+
+    .card-item p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width:880px) {
+    .card p {
+        font-size: 12px;
+    }
+
+    .keys-inner h1 {
+        font-size: 35px;
+    }
+
+    .text p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .text h3 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .left h1 {
+        font-size: 25px !important;
+    }
+
+    .card-item p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero {
+        height: 100%;
+        position: static;
+        padding-bottom: 30px;
+    }
+
+    .hero-inner {
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .bottom-card {
+        width: 100%;
+        margin: 0;
+        padding-top: 25px;
+        position: static;
+        top: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        max-width: 300px;
+        min-width: 50px;
+        width: 100%;
+        height: 130px !important;
+        gap: 5px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    .charts {
+        gap: 15px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .imgg {
+        gap: 15px;
+    }
+
+    .imgg .text {
+        width: 50%;
+    }
+
+    .text h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .text p {
+        line-height: 23px;
+        font-size: 20px;
+    }
+
+    .imgg img {
+        max-width: 340px;
+        min-width: 100px;
+        width: 100%;
+    }
+    .order{
+        flex-direction: column;
+    }
+    .left, .right{
+        width: 100%;
+        align-items: center;
+    }
+    .btn, .left .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:627px) {
+ 
+    .keys-inner h1 {
+        font-size: 30px;
+    }
+    .keys{
+        padding: 50px 0;
+    }
+    .text h3 {
+        font-size: 18px;
+        line-height: 17px;
+    }
+
+    .text p{
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+ 
+    .keys-inner h1 {
+        font-size: 25px;
+    }
+   
+    .text h3 {
+        font-size: 18px;
+        line-height: 17px;
+    }
+
+    .text p{
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+}
+
