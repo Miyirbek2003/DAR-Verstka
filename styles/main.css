@@ -92,6 +92,8 @@ img {
     width: 80%;
     margin: auto;
     position: absolute;
+     transform : translateX(-50%);
+    left: 50%;
     bottom: -30px;
     display: grid;
     align-items: center;
